@@ -49,9 +49,33 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
-<a href='https://youtu.be/8g6uafc6LjE' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/549d21f4-26c2-412d-9117-d7b6835aedbf"></a>
+# Policy Discussion Meeting
 
-[YouTube Video: Stakeholder Policy Buy-In Meeting](https://youtu.be/8g6uafc6LjE)
+**Participants:**  
+- Jimmy  
+- Victoria  
+
+---
+
+**Jimmy:** Good morning, Victoria. How have things been? I know the past few weeks have been quite busy.  
+
+**Victoria:** Good morning, Jimmy. It has been a bit hectic, but we are managing. I reviewed the draft policy, and overall it looks solid. However, with our current staffing levels, it will be difficult to meet the proposed remediation timelines—particularly the 48-hour requirement for critical vulnerabilities.  
+
+**Jimmy:** I understand. That timeline is quite aggressive, especially at the start. As a compromise, we could extend the critical vulnerability remediation window to one week. The 48-hour response could be reserved for truly urgent cases, such as zero-day vulnerabilities.  
+
+**Victoria:** That adjustment would be very helpful. We would also appreciate some flexibility during the initial phase as our team adapts to the new remediation and patching process—perhaps for the first few months.  
+
+**Jimmy:** That makes sense. Once the policy is finalized, the program will officially begin, but we are planning to provide all departments with a six-month adjustment period to become comfortable with the new process. Does that sound reasonable?  
+
+**Victoria:** Yes, that sounds fair. Thank you for considering our input. It’s reassuring to be included in the decision-making process—it helps ensure we feel part of the overall solution.  
+
+**Jimmy:** Absolutely. This is a collective effort, and we value everyone’s collaboration.  
+
+**Victoria:** Thank you, Jimmy. I appreciate your time.  
+
+**Jimmy:** Likewise. Thanks for keeping this discussion efficient.  
+
+**Victoria:** Agreed. I’ll talk to you soon.  
 
 ---
 
