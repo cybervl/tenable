@@ -164,12 +164,48 @@ The server team received remediation scripts and scan reports to address key vul
 ### Step 8) Mock Meeting: Post-Initial Discovery Scan (Server Team)
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB). 
+# Vulnerability Scan Results Discussion
 
-<a href="https://youtu.be/0tjjFewxSNw" target="_"><img width="600" src="https://github.com/user-attachments/assets/03027c66-5f7c-42d0-b6dd-09d053c040b1"/></a>
-
-[Meeting Video](https://youtu.be/0tjjFewxSNw)
+**Participants:**  
+- Jimmy  
+- Victoria  
 
 ---
+
+**Victoria:** Good morning, Jimmy. How did the scan go? Any outages or resource issues?  
+
+**Jimmy:** The scan completed smoothly. Resource utilization was minimal, and aside from the open connections, you wouldn’t have noticed it was running.  
+
+**Victoria:** Excellent. Let’s move on to the findings.  
+
+**Jimmy:** The majority of vulnerabilities are due to outdated versions of Wireshark installed on several servers. Additionally, I found that the local guest account is incorrectly part of the Administrators group, which poses a security risk.  
+
+Some issues, such as Microsoft Edge (Chromium) vulnerabilities, may be resolved automatically through Windows Updates. Self-signed certificates can be ignored, but deprecated protocols (TLS 1.0/1.1) and weak cipher suites will require remediation.  
+
+**Victoria:** So the priorities are:  
+1. Remove outdated Wireshark installations.  
+2. Correct the guest account group membership.  
+3. Disable deprecated protocols and cipher suites.  
+
+**Jimmy:** Correct. The good news is that these issues appear consistent across servers, so remediation should be uniform.  
+
+**Victoria:** Do you foresee any challenges in addressing them?  
+
+**Jimmy:** No major issues. We’ll run changes through the Change Control Board, but uninstalling Wireshark and removing the guest account should be straightforward. I’ll confirm with our systems administrators.  
+
+**Victoria:** Great. Please prepare remediation packages to streamline deployment.  
+
+**Jimmy:** Will do. Do you already have patch management in place for the Windows-related vulnerabilities?  
+
+**Victoria:** Yes, patch management is active, so updates will be applied automatically.  
+
+**Jimmy:** Perfect. I’ll research remediation steps and provide an update before the next Change Control Board meeting.  
+
+**Victoria:** Sounds good. Thanks, Jimmy.  
+
+**Jimmy:** Thank you, Victoria. Talk soon.  
+
+
 
 ### Step 9) Mock CAB Meeting: Implementing Remediations
 
