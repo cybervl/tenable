@@ -95,21 +95,48 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
 
-<a href='https://youtu.be/lg068WA4SKM' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/31fe8d0f-636b-475b-8d5a-a2795c183f86"></a>
+# Vulnerability Scanning Discussion
 
-[YouTube Video: Initial Discovery Scan](https://youtu.be/lg068WA4SKM)
+**Participants:**  
+- Jimmy  
+- Victoria  
 
 ---
+
+**Victoria:** Good morning, Jimmy. I hear you’re preparing to begin some vulnerability scans.  
+
+**Jimmy:** That’s correct. Now that our vulnerability management policy is in place, I’d like to start conducting scheduled credentialed scans across your environment.  
+
+**Victoria:** Sounds good. What’s involved, and how can our team assist?  
+
+**Jimmy:** We’re planning weekly scans of the server infrastructure. We estimate it will take about 4–6 hours to scan approximately 2,200 assets. To perform accurate assessments, we’ll need administrative credentials so the scan engine can remotely log into the targets.  
+
+**Victoria:** I see. Before we proceed, could you clarify what scanning entails? I’m concerned about resource utilization, and I also want to ensure that granting credentials to all systems is handled securely.  
+
+**Jimmy:** Those are valid concerns. The scan engine sends controlled traffic to the servers to identify vulnerabilities. This includes checking the registry, detecting outdated software, and identifying insecure protocols or cipher suites. Credentials are required to provide deeper visibility.  
+
+**Victoria:** Understood. As long as the scans don’t disrupt server operations, we can proceed. I suggest starting with a single server to monitor performance and resource usage before expanding.  
+
+**Jimmy:** That’s a good approach. Regarding credentials, could your team create a dedicated account in Active Directory? You can keep the account disabled until scanning begins, enable it during the scan, and then disable or deprovision it immediately afterward. This would provide just-in-time access and reduce risk.  
+
+**Victoria:** That works for us. I’ll ask Susan to begin automating the provisioning and deprovisioning process for these accounts.  
+
+**Jimmy:** Excellent. Once the credentials are ready, we’ll move forward with the first scan.  
+
+**Victoria:** Perfect. I’ll keep you updated.  
+
+**Jimmy:** Thank you, Victoria. Talk soon.  
+
+**Victoria:** Talk soon.  
+
+
+
 
 ### Step 5) Initial Scan of Server Team Assets
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.  
 
-<img width="635" alt="image" src="https://github.com/user-attachments/assets/937cccbd-36bb-4445-97b9-e915085cda81" style="border: 2px solid black;">
-
-[Scan 1 - Initial Scan](https://drive.google.com/file/d/1RBPVj_azKJMwmRZ8QILlb4hxIjQU3wQ7/view?usp=drive_link)
-
-
+<img width="902" height="757" alt="image" src="https://github.com/user-attachments/assets/76e4267c-4070-49bf-ab29-bc81d8008269" />
 
 
 ---
