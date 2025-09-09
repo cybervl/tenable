@@ -82,12 +82,14 @@ In this phase, a meeting with the server team introduces the draft Vulnerability
 ### Step 3) Policy Finalization and Senior Leadership Sign-Off
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
-[Finalized Policy](https://docs.google.com/document/d/1rvueLX_71pOR8ldN9zVW9r_zLzDQxVsnSUtNar8ftdg/edit?usp=drive_link)
-<div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/9afcdbc1-0493-4af2-9287-1cb9b8f59b40" alt="image" width="400">
-</div>
+
+[Policy Production with Sign-off
+](https://docs.google.com/document/d/1OCJwhK_w9VAcrmsjxZf8KfeaEs08xN2MA7VWFkUmBys/edit?tab=t.0)
+
 
 ---
+
+
 
 ### Step 4) Mock Meeting: Initial Scan Permission (Server Team)
 
