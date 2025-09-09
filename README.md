@@ -211,9 +211,41 @@ Some issues, such as Microsoft Edge (Chromium) vulnerabilities, may be resolved 
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.  
 
-<a href="https://youtu.be/zOFPkTa9kY8" target="_"><img width="600" src="https://github.com/user-attachments/assets/07164e63-fbce-471a-b469-29a6d41b7bb8"/></a>
+# Vulnerability Remediation: Insecure Protocols & Cipher Suites
 
-[Meeting Video](https://youtu.be/zOFPkTa9kY8)
+**Participants:**  
+- Victoria (Risk Department)  
+- Jimmy (Infrastructure Team)  
+
+---
+
+**Facilitator:** Next on the agenda are vulnerability remediations for the server team:  
+1. Removal of insecure protocols.  
+2. Removal of insecure cipher suites.  
+
+Victoria from Risk has been working with Jimmy from Infrastructure on this. Jimmy, can you walk us through the technical aspects?  
+
+**Jimmy:** Normally I would, but since Victoria built the solution, I’ll let her explain.  
+
+**Victoria:** Sure. The issue is that insecure cipher suites and protocols remain enabled on some systems. If a server requests to use those outdated algorithms, our systems could still negotiate and use them, which is a security risk.  
+
+The fix is straightforward: we wrote a PowerShell script that updates the Windows registry to disable deprecated protocols and ciphers, and enable only the secure, standardized ones currently in use.  
+
+**Facilitator:** Sounds good. But what if something goes wrong? Do we have a rollback plan?  
+
+**Victoria:** Yes. We’re approaching this with a tiered deployment:  
+- **Pilot Group:** A small subset of systems.  
+- **Pre-Production:** Wider testing.  
+- **Full Production:** Organization-wide deployment.  
+
+We’ve also developed automated rollback scripts. If issues arise, they restore the original registry values for protocols and ciphers.  
+
+**Facilitator:** Excellent. Since these are simple registry updates, the risk is minimal. Any further questions?  
+
+**(No further questions.)**  
+
+**Facilitator:** Great. That concludes this week’s CAP meeting. See you all next week.  
+
 
 ---
 ### Step 10 ) Remediation Effort
